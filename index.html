@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>The 151 BTC Challenge - Unlock $13 Million USD</title>
+    <meta name="description" content="For Sale: A locked Bitcoin wallet file containing 151 BTC. Password lost. Selling for 0.5 ETH. Ideal for recovery experts.">
+    <meta name="keywords" content="151BTC, bitcoin wallet, wallet.dat, lost password, crypto recovery, 151比特幣, 錢包破解">
+    
+    <meta property="og:title" content="The 151 BTC Challenge">
+    <meta property="og:description" content="Can you unlock $13 Million? Locked wallet file for sale.">
+    <meta property="og:type" content="website">
+    
+    <style>
+        body { font-family: 'Courier New', Courier, monospace; background-color: #0d1117; color: #c9d1d9; margin: 0; padding: 20px; line-height: 1.6; }
+        .container { max-width: 650px; margin: 0 auto; background: #161b22; padding: 30px; border: 1px solid #30363d; border-radius: 6px; box-shadow: 0 0 20px rgba(0,0,0,0.5); }
+        
+        /* 駭客/終端機風格 */
+        h1 { color: #58a6ff; text-align: center; border-bottom: 1px solid #30363d; padding-bottom: 15px; font-size: 1.8em; }
+        .alert { background: #3fb950; color: #000; padding: 5px 10px; font-weight: bold; border-radius: 4px; display: inline-block; font-size: 0.8em; }
+        
+        .product-box { background: #0d1117; border: 1px solid #30363d; padding: 20px; margin: 20px 0; border-radius: 6px; }
+        .price { font-size: 1.5em; color: #f2a900; font-weight: bold; display: block; margin-top: 15px; }
+        
+        .wallet-box { background: #21262d; padding: 15px; border-radius: 6px; text-align: center; word-break: break-all; font-family: monospace; border: 1px dashed #8b949e; color: #8b949e; margin-top: 10px; }
+        
+        button { width: 100%; padding: 15px; margin-top: 15px; border: none; border-radius: 6px; font-size: 1.1em; cursor: pointer; font-weight: bold; font-family: 'Courier New', monospace; }
+        .copy-btn { background: #1f6feb; color: white; }
+        .copy-btn:hover { background: #388bfd; }
+        
+        .submit-btn { background: #238636; color: white; }
+        .submit-btn:hover { background: #2ea043; }
+        
+        input, select { width: 100%; padding: 12px; margin: 5px 0 15px 0; background: #0d1117; border: 1px solid #30363d; color: #c9d1d9; border-radius: 6px; box-sizing: border-box; }
+        
+        label { color: #8b949e; font-size: 0.9em; }
+        
+        .disclaimer { font-size: 0.75em; color: #484f58; margin-top: 40px; text-align: center; border-top: 1px solid #30363d; padding-top: 10px; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>/// 151 BTC CHALLENGE ///</h1>
+    
+    <div style="text-align:center; margin-bottom:20px;">
+        <span class="alert">STATUS: LOCKED</span>
+    </div>
+
+    <div class="product-box">
+        <h3>Target: Encrypted Wallet File (wallet.dat)</h3>
+        <p>
+            This wallet contains <strong>151 Bitcoins</strong> mined in the early era. 
+            The password has been lost. <br>
+            Current Value: <strong>~$13,000,000 USD</strong>.
+        </p>
+        <p>
+            We are selling the raw wallet file to professionals. 
+            If you have the skills to crack the password, the fortune is yours.
+        </p>
+        <span class="price">Price: 0.5 ETH</span>
+    </div>
+
+    <div class="payment-section">
+        <h2 style="color:#8b949e; font-size:1.2em;">Step 1: Payment (ETH)</h2>
+        <p style="text-align:center; color:#ff7b72; font-size:0.9em; font-weight:bold;">⚠️ Network: BSC (BEP20) ONLY</p>
+        
+        <div style="text-align:center;">
+             <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=0x9264C99f6d7A7Ec7BB28a30A774137F9EaD23e5a" alt="ETH Wallet QR Code" style="border:5px solid white; border-radius:4px;">
+        </div>
+
+        <div class="wallet-box" id="walletText">
+            0x9264C99f6d7A7Ec7BB28a30A774137F9EaD23e5a
+        </div>
+        <button class="copy-btn" onclick="copyWallet()">[COPY ADDRESS]</button>
+    </div>
+
+    <div class="form-section" style="margin-top:30px;">
+        <h2 style="color:#8b949e; font-size:1.2em;">Step 2: Submit Proof</h2>
+        
+        <form action="https://formspree.io/f/xnjjaaek" method="POST">
+            
+            <label>Name / Alias</label>
+            <input type="text" name="name" required placeholder="Who are you?">
+
+            <label>Email (File will be sent here)</label>
+            <input type="email" name="email" required placeholder="Receive wallet.dat here">
+
+            <label>Your Wallet Address</label>
+            <input type="text" name="buyer_wallet" required placeholder="For verification">
+
+            <label>Transaction Hash (TXID)</label>
+            <input type="text" name="txid" required placeholder="0x...">
+
+            <input type="hidden" name="network_note" value="Expected Network: BSC (BEP20)">
+
+            <button type="submit" class="submit-btn">>> CONFIRM TRANSACTION <<</button>
+        </form>
+    </div>
+
+    <div class="disclaimer">
+        <p>DISCLAIMER: This file is sold "as is". We do not guarantee that the password can be recovered. You are purchasing the file for research or recovery purposes only. All sales are final.</p>
+        <p>&copy; 2025 151BTC Challenge.</p>
+    </div>
+</div>
+
+<script>
+    function copyWallet() {
+        var copyText = document.getElementById("walletText");
+        navigator.clipboard.writeText(copyText.innerText).then(function() {
+            alert("Address Copied! Please send via BSC (BEP20) network.");
+        }, function(err) {
+            alert("Copy failed. Please select manually.");
+        });
+    }
+</script>
+
+</body>
+</html>
