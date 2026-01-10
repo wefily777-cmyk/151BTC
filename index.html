@@ -6,7 +6,6 @@
     
     <title>The 151 BTC Challenge - Unlock $13 Million USD</title>
     <meta name="description" content="For Sale: A locked Bitcoin wallet file containing 151 BTC. Password lost. Selling for 0.5 ETH. Ideal for recovery experts.">
-    <meta name="keywords" content="151BTC, bitcoin wallet, wallet.dat, lost password, crypto recovery, 151比特幣, 錢包破解">
     
     <meta property="og:title" content="The 151 BTC Challenge">
     <meta property="og:description" content="Can you unlock $13 Million? Locked wallet file for sale.">
@@ -29,12 +28,10 @@
         .copy-btn { background: #1f6feb; color: white; }
         .copy-btn:hover { background: #388bfd; }
         
-        .submit-btn { background: #238636; color: white; }
+        /* Google Form 按鈕樣式 */
+        .submit-btn { background: #238636; color: white; width: 100%; }
         .submit-btn:hover { background: #2ea043; }
-        
-        input, select { width: 100%; padding: 12px; margin: 5px 0 15px 0; background: #0d1117; border: 1px solid #30363d; color: #c9d1d9; border-radius: 6px; box-sizing: border-box; }
-        
-        label { color: #8b949e; font-size: 0.9em; }
+        a { text-decoration: none; display: block; }
         
         .disclaimer { font-size: 0.75em; color: #484f58; margin-top: 40px; text-align: center; border-top: 1px solid #30363d; padding-top: 10px; }
     </style>
@@ -79,24 +76,13 @@
     <div class="form-section" style="margin-top:30px;">
         <h2 style="color:#8b949e; font-size:1.2em;">Step 2: Submit Proof</h2>
         
-        <form action="https://formspree.io/f/xnjjaaek" method="POST">
-            
-            <label>Name / Alias</label>
-            <input type="text" name="name" required placeholder="Who are you?">
+        <p style="color:#c9d1d9; font-size:0.9em; margin-bottom: 20px;">
+            After payment, please fill out the verification form securely via Google Forms.
+        </p>
 
-            <label>Email (File will be sent here)</label>
-            <input type="email" name="email" required placeholder="Receive wallet.dat here">
-
-            <label>Your Wallet Address</label>
-            <input type="text" name="buyer_wallet" required placeholder="For verification">
-
-            <label>Transaction Hash (TXID)</label>
-            <input type="text" name="txid" required placeholder="0x...">
-
-            <input type="hidden" name="network_note" value="Expected Network: BSC (BEP20)">
-
-            <button type="submit" class="submit-btn">>> CONFIRM TRANSACTION <<</button>
-        </form>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLScYOMizPU8MIHu8lhhdr6Z4TDtCFj-sZQ-GnbIYDFTrsBSzcQ/viewform?usp=header" target="_blank">
+            <button class="submit-btn">>> OPEN VERIFICATION FORM <<</button>
+        </a>
     </div>
 
     <div class="disclaimer">
