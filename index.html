@@ -15,20 +15,24 @@
         body { font-family: 'Courier New', Courier, monospace; background-color: #0d1117; color: #c9d1d9; margin: 0; padding: 20px; line-height: 1.6; }
         .container { max-width: 650px; margin: 0 auto; background: #161b22; padding: 30px; border: 1px solid #30363d; border-radius: 6px; box-shadow: 0 0 20px rgba(0,0,0,0.5); }
         
-        /* 駭客/終端機風格 */
         h1 { color: #58a6ff; text-align: center; border-bottom: 1px solid #30363d; padding-bottom: 15px; font-size: 1.8em; }
         .alert { background: #3fb950; color: #000; padding: 5px 10px; font-weight: bold; border-radius: 4px; display: inline-block; font-size: 0.8em; }
         
         .product-box { background: #0d1117; border: 1px solid #30363d; padding: 20px; margin: 20px 0; border-radius: 6px; }
         .price { font-size: 1.5em; color: #f2a900; font-weight: bold; display: block; margin-top: 15px; }
         
+        /* 圖片證明區塊樣式 */
+        .proof-section { margin-top: 20px; border-top: 1px dashed #30363d; padding-top: 15px; }
+        .proof-title { color: #8b949e; font-size: 0.9em; margin-bottom: 10px; display: block; }
+        .proof-img { width: 100%; border: 1px solid #30363d; border-radius: 4px; margin-bottom: 10px; filter: brightness(0.9); transition: filter 0.3s; }
+        .proof-img:hover { filter: brightness(1.1); border-color: #58a6ff; }
+
         .wallet-box { background: #21262d; padding: 15px; border-radius: 6px; text-align: center; word-break: break-all; font-family: monospace; border: 1px dashed #8b949e; color: #8b949e; margin-top: 10px; }
         
         button { width: 100%; padding: 15px; margin-top: 15px; border: none; border-radius: 6px; font-size: 1.1em; cursor: pointer; font-weight: bold; font-family: 'Courier New', monospace; }
         .copy-btn { background: #1f6feb; color: white; }
         .copy-btn:hover { background: #388bfd; }
         
-        /* Google Form 按鈕樣式 */
         .submit-btn { background: #238636; color: white; width: 100%; }
         .submit-btn:hover { background: #2ea043; }
         a { text-decoration: none; display: block; }
@@ -48,11 +52,19 @@
     <div class="product-box">
         <h3>Target: Encrypted Wallet File (wallet.dat)</h3>
         <p>
-            This wallet contains <strong>151 Bitcoins</strong> mined in the early era. 
+            This wallet contains <strong>151 Bitcoins</strong> mined in the early era (2009). 
             The password has been lost. <br>
             Current Value: <strong>~$13,000,000 USD</strong>.
         </p>
-        <p>
+        
+        <div class="proof-section">
+            <span class="proof-title">>> SYSTEM PROOF / SNAPSHOTS:</span>
+            <img src="proof3.jpg" alt="Wallet Balance" class="proof-img" title="Total Balance: 151+ BTC">
+            <img src="proof2.jpg" alt="Transaction History" class="proof-img" title="2009 Mining History">
+            <img src="proof1.jpg" alt="Bitcoin Core" class="proof-img" title="Software Version">
+        </div>
+
+        <p style="margin-top: 15px;">
             We are selling the raw wallet file to professionals. 
             If you have the skills to crack the password, the fortune is yours.
         </p>
